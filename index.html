@@ -9,11 +9,12 @@
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <!-- Import JQuery UI CSS -->
     <link
-      rel="stylsheet"
+      rel="stylesheet"
+      type="text/css"
       href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
     />
     <!-- My CSS -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <!-- My jQuery files -->
     <script src="interactions.js"></script>
   </head>
@@ -21,11 +22,44 @@
     <div>
       <h1>Interactions:</h1>
       <h3>Draggable:</h3>
-      <div class="draggable" id="drag1"><p>Draggable object 1</p></div>
-      <div class="draggable" id="drag2"><p>Draggable object 2</p></div>
-      <div class="droppable"><p>Drop objects here</p></div>
+      <div class="draggable ui-widget-content" id="drag1">
+        <p>Draggable object 1</p>
+      </div>
+      <div class="draggable ui-widget-content" id="drag2">
+        <p>Draggable object 2</p>
+      </div>
+      <div class="droppable ui-widget-content"><p>Drop objects here</p></div>
       <h3>Resizable:</h3>
-      <div class="resizable"><p>Try to resize me!</p></div>
+      <div class="resizable ui-widget-content" id="resizable">
+        <p>Try to resize me!</p>
+      </div>
+      <h3>Selectable:</h3>
+      <div>
+        <ul id="selectable" class="ui-selectable">
+          <li class="ui-widget-content">0 The Fool</li>
+          <li class="ui-widget-content">1 The Magician</li>
+          <li class="ui-widget-content">2 The High Priestess</li>
+          <li class="ui-widget-content">3 The Empress</li>
+          <li class="ui-widget-content">4 The Emperor</li>
+          <li class="ui-widget-content">5 The Hierophant</li>
+          <li class="ui-widget-content">6 The Lovers</li>
+          <li class="ui-widget-content">7 The Chariot</li>
+          <li class="ui-widget-content">8 Strength</li>
+          <li class="ui-widget-content">9 The Hermit</li>
+          <li class="ui-widget-content">10 Wheel of Fortune</li>
+          <li class="ui-widget-content">11 Justice</li>
+          <li class="ui-widget-content">12 The Hanged Man</li>
+          <li class="ui-widget-content">13 Death</li>
+          <li class="ui-widget-content">14 Temperance</li>
+          <li class="ui-widget-content">15 The Devil</li>
+          <li class="ui-widget-content">16 The Tower</li>
+          <li class="ui-widget-content">17 The Stars</li>
+          <li class="ui-widget-content">18 The Moon</li>
+          <li class="ui-widget-content">19 The Sun</li>
+          <li class="ui-widget-content">20 Judgement</li>
+          <li class="ui-widget-content">21 The World</li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>

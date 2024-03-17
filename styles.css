@@ -17,8 +17,32 @@ body {
   height: 150px;
 }
 .resizable {
-    width: 200px;
-    height: 150px;
-    background-color: wheat;
-    border: solid 4px burlywood;
+  width: 200px;
+  height: 150px;
+  background-color: wheat;
+  border: solid 4px burlywood;
+  padding: 0.5em;
+}
+.flexbox {
+  display: flex;
+  max-width: max-content;
+  min-width: 200px;
+}
+
+#selectable {
+  list-style-type: none;
+  width: max-content;
+}
+#selectable li {
+  margin: 2px;
+  padding: 2px;
+  background-color: wheat;
+  border: solid 4px burlywood;
+  border-radius: 6px;
+}
+#selectable .ui-selecting {
+  background-color: floralwhite;
+}
+#selectable .ui-selected {
+  background-color: goldenrod;
 }

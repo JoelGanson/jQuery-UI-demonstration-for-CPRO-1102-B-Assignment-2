@@ -5,4 +5,5 @@ $(function () {
   });
   $(".droppable").droppable();
   $(".resizable").resizable();
+  $("#selectable").selectable();
 });
