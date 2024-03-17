@@ -1,0 +1,10 @@
+.draggable {
+  width: 200px;
+  height: 150px;
+  background-color: mediumvioletred;
+  border: solid wheat 4px;
+  border-radius: 20px;
+}
+h1 {
+    color: cornflowerblue;
+}
