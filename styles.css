@@ -1,10 +1,24 @@
-.draggable {
-  width: 200px;
-  height: 150px;
-  background-color: mediumvioletred;
-  border: solid wheat 4px;
+body {
+  background-color: beige;
+}
+
+.draggable,
+.droppable {
+  background-color: wheat;
+  border: solid 4px burlywood;
   border-radius: 20px;
 }
-h1 {
-    color: cornflowerblue;
+.draggable {
+  width: 150px;
+  height: 100px;
+}
+.droppable {
+  width: 250px;
+  height: 150px;
+}
+.resizable {
+    width: 200px;
+    height: 150px;
+    background-color: wheat;
+    border: solid 4px burlywood;
 }
