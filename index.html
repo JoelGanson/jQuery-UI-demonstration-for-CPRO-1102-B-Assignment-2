@@ -17,6 +17,8 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <!-- My jQuery files -->
     <script src="interactions.js"></script>
+    <script src="widgets.js"></script>
+    <script src="effects.js"></script>
   </head>
   <body>
     <h1>A demonstration of jQuery UI</h1>
@@ -119,12 +121,40 @@
         </div>
         <!-- Autocomplete Section -->
         <h3>Autocomplete</h3>
-        <label for="autocomplete">Type here to search for a Major Arcana: </label>
+        <label for="autocomplete"
+          >Type here to search for a Major Arcana:
+        </label>
         <input type="text" name="autocomplete" id="autocomplete" />
         <!-- Datepicker section -->
         <h3>Datepicker</h3>
         <label for="datepicker">Choose a date</label>
-        <input type="text" name="datepicker" id="datepicker"/>
+        <input type="text" name="datepicker" id="datepicker" />
+        <!-- Slider section -->
+        <h3>Slider</h3>
+        <label for="slider"
+          >Choose a value: <span id="sliderValue"></span>
+        </label>
+        <div id="slider" name="slider"></div>
+      </div>
+      <!-- End of Widgets, start of Effects -->
+      <div class="flexContent">
+        <h2>Effects</h2>
+        <div id="targetWrapper">
+          <div id="target" class="ui-widget-content ui-corner-all defaultColors">
+            <h3 class="ui-corner-all">
+              Effects will be performed on this box
+            </h3>
+          </div>
+        </div>
+        <button id="hideBtn">Hide</button>
+        <button id="showBtn">Show</button>
+        <br />
+        <button id="explodeBtn">Explode</button>
+        <br />
+        <button id="fadeOutBtn">Fade Out</button>
+        <button id="fadeInBtn">Fade In</button>
+        <br />
+        <button id="colorBtn">Swap Colors</button>
       </div>
       <!-- End of flexbox -->
     </div>

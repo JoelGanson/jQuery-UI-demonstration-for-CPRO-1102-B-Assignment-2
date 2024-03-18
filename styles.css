@@ -54,14 +54,30 @@ body {
   background-color: goldenrod;
 }
 .accordion {
-    width: fit-content;
-    max-width: 300px;
+  width: fit-content;
+  max-width: 300px;
 }
 .ui-accordion-header {
-    background-color: wheat;
-    border: solid 4px burlywood;
+  background-color: wheat;
+  border: solid 4px burlywood;
 }
 .ui-accordion-header-active {
-    background-color: goldenrod;
-    color: black;
+  background-color: goldenrod;
+  color: black;
+}
+#target {
+  width: 200px;
+  height: 150px;
+}
+#targetWrapper {
+  width: 220px;
+  height: 170px;
+}
+.defaultColors {
+  background-color: wheat;
+  border: solid 4px burlywood;
+}
+.alternateColors {
+  background-color: darkkhaki;
+  border: solid 4px goldenrod;
 }
