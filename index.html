@@ -18,48 +18,107 @@
     <!-- My jQuery files -->
     <script src="interactions.js"></script>
   </head>
-  <body class="flexBox">
-    <div>
-      <h1>Interactions:</h1>
-      <h3>Draggable:</h3>
-      <div class="draggable ui-widget-content" id="drag1">
-        <p>Draggable object 1</p>
+  <body>
+    <h1>A demonstration of jQuery UI</h1>
+    <div class="flexBox">
+      <!-- A div for all the jQuery interactions -->
+      <div class="flexContent">
+        <h2>Interactions:</h2>
+        <!-- Draggable and droppable. The draggable divs can be dropped on the droppable div -->
+        <h3>Draggable:</h3>
+        <div class="draggable ui-widget-content" id="drag1">
+          <p>Draggable object 1</p>
+        </div>
+        <div class="draggable ui-widget-content" id="drag2">
+          <p>Draggable object 2</p>
+        </div>
+        <div class="droppable ui-widget-content"><p>Drop objects here</p></div>
+        <!-- A resizable DOM element -->
+        <h3>Resizable:</h3>
+        <div class="resizable ui-widget-content" id="resizable">
+          <p>Try to resize me!</p>
+        </div>
+        <!-- You can select from these elements. I discovered you can click and drag to pick more than one, or ctrl+click to pick multiple -->
+        <!-- I made the Major Arcana of the Tarot deck my selectable objects for fun -->
+        <h3>Selectable:</h3>
+        <div>
+          <ul id="selectable" class="ui-selectable">
+            <li class="ui-widget-content">0 The Fool</li>
+            <li class="ui-widget-content">1 The Magician</li>
+            <li class="ui-widget-content">2 The High Priestess</li>
+            <li class="ui-widget-content">3 The Empress</li>
+            <li class="ui-widget-content">4 The Emperor</li>
+            <li class="ui-widget-content">5 The Hierophant</li>
+            <li class="ui-widget-content">6 The Lovers</li>
+            <li class="ui-widget-content">7 The Chariot</li>
+            <li class="ui-widget-content">8 Strength</li>
+            <li class="ui-widget-content">9 The Hermit</li>
+            <li class="ui-widget-content">10 Wheel of Fortune</li>
+            <li class="ui-widget-content">11 Justice</li>
+            <li class="ui-widget-content">12 The Hanged Man</li>
+            <li class="ui-widget-content">13 Death</li>
+            <li class="ui-widget-content">14 Temperance</li>
+            <li class="ui-widget-content">15 The Devil</li>
+            <li class="ui-widget-content">16 The Tower</li>
+            <li class="ui-widget-content">17 The Stars</li>
+            <li class="ui-widget-content">18 The Moon</li>
+            <li class="ui-widget-content">19 The Sun</li>
+            <li class="ui-widget-content">20 Judgement</li>
+            <li class="ui-widget-content">21 The World</li>
+          </ul>
+        </div>
+        <!-- End of the interactions -->
       </div>
-      <div class="draggable ui-widget-content" id="drag2">
-        <p>Draggable object 2</p>
+      <!-- Start of jQuery Widgest -->
+      <div class="flexContent">
+        <h2>Widgets:</h2>
+        <!-- Accordion -->
+        <h3>Accordion</h3>
+        <div class="accordion">
+          <h3>Section 1</h3>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              sollicitudin diam a bibendum laoreet. Praesent dapibus odio purus,
+              id dictum ligula condimentum interdum. In eleifend vehicula
+              tempor. Suspendisse potenti. Nunc vulputate arcu augue, id
+              consectetur ligula tempus a. Vivamus quis lacus ipsum. Morbi
+              viverra malesuada lacus id aliquet. Aliquam erat volutpat. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              consectetur varius odio id porta. Quisque orci dolor, cursus quis
+              ornare sed, ultricies id ex. Vivamus aliquet magna id consequat
+              egestas. Nam tincidunt, justo ac cursus venenatis, purus ligula
+              ullamcorper elit, ac dictum lacus augue non augue. Pellentesque eu
+              sapien pellentesque, maximus nisl quis, viverra urna.
+            </p>
+          </div>
+          <h3>Section 2</h3>
+          <div>
+            <p>
+              Ut in euismod magna, nec porta nibh. Nulla a laoreet velit. Ut a
+              nisl a tellus convallis condimentum. Donec eleifend leo mi, vel
+              commodo ante vehicula eu. Sed a eleifend lectus, placerat vehicula
+              arcu. Fusce sed rhoncus neque, at tristique urna. Quisque id arcu
+              id nulla sodales dapibus.
+            </p>
+          </div>
+          <h3>Section 3</h3>
+          <div>
+            <p>
+              Nunc nec elit tortor. Maecenas et odio posuere, convallis nunc
+              quis, semper mi. Maecenas maximus libero eget vehicula aliquam.
+              Phasellus aliquet vulputate velit, nec fermentum risus ultrices
+              ultricies. Donec placerat arcu eu ipsum auctor, sed ullamcorper
+              quam ultricies. Etiam elit massa, venenatis vel molestie id,
+              volutpat a lacus. Integer sed urna sed justo fermentum dapibus ac
+              a est. Vivamus vehicula turpis bibendum, volutpat enim a,
+              porttitor mauris.
+            </p>
+          </div>
+          <!-- End of accordion -->
+        </div>
       </div>
-      <div class="droppable ui-widget-content"><p>Drop objects here</p></div>
-      <h3>Resizable:</h3>
-      <div class="resizable ui-widget-content" id="resizable">
-        <p>Try to resize me!</p>
-      </div>
-      <h3>Selectable:</h3>
-      <div>
-        <ul id="selectable" class="ui-selectable">
-          <li class="ui-widget-content">0 The Fool</li>
-          <li class="ui-widget-content">1 The Magician</li>
-          <li class="ui-widget-content">2 The High Priestess</li>
-          <li class="ui-widget-content">3 The Empress</li>
-          <li class="ui-widget-content">4 The Emperor</li>
-          <li class="ui-widget-content">5 The Hierophant</li>
-          <li class="ui-widget-content">6 The Lovers</li>
-          <li class="ui-widget-content">7 The Chariot</li>
-          <li class="ui-widget-content">8 Strength</li>
-          <li class="ui-widget-content">9 The Hermit</li>
-          <li class="ui-widget-content">10 Wheel of Fortune</li>
-          <li class="ui-widget-content">11 Justice</li>
-          <li class="ui-widget-content">12 The Hanged Man</li>
-          <li class="ui-widget-content">13 Death</li>
-          <li class="ui-widget-content">14 Temperance</li>
-          <li class="ui-widget-content">15 The Devil</li>
-          <li class="ui-widget-content">16 The Tower</li>
-          <li class="ui-widget-content">17 The Stars</li>
-          <li class="ui-widget-content">18 The Moon</li>
-          <li class="ui-widget-content">19 The Sun</li>
-          <li class="ui-widget-content">20 Judgement</li>
-          <li class="ui-widget-content">21 The World</li>
-        </ul>
-      </div>
+      <!-- End of flexbox -->
     </div>
   </body>
 </html>

@@ -23,10 +23,17 @@ body {
   border: solid 4px burlywood;
   padding: 0.5em;
 }
-.flexbox {
+.flexBox {
   display: flex;
   max-width: max-content;
   min-width: 200px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.flexBox.flexContent {
+  display: inline-block;
+  width: fit-content;
+  flex-basis: 200px;
 }
 
 #selectable {
@@ -45,4 +52,16 @@ body {
 }
 #selectable .ui-selected {
   background-color: goldenrod;
+}
+.accordion {
+    width: fit-content;
+    max-width: 300px;
+}
+.ui-accordion-header {
+    background-color: wheat;
+    border: solid 4px burlywood;
+}
+.ui-accordion-header-active {
+    background-color: goldenrod;
+    color: black;
 }
